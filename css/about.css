@@ -1,14 +1,23 @@
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "Arvo";
+    src: url(../fonts/Arvo-Regular.ttf);
+}
+
+body, .clear-margin-padding {
+    font-family: "Arvo";
     margin: 0;
     padding: 0;
-    color: #444
+    color: #444;
 }
 .center-element{
     text-align: center;
 }
 .container{
-    background-color: ccc;
+    background-color: #ccc;
     padding: 30px;
 }
 .container p:first-letter {
@@ -43,7 +52,7 @@ dd{
     margin: 0;
     padding: 0;
     width: 100%;
-    text-align: end;
+    text-align: left;
 }
 .footer li {
     display: inline;
@@ -53,6 +62,20 @@ dd{
 }
 .footer img {
     width: 100px;
+}
+.social-media-section{
+    text-align: center;
+}
+.social-media-section img {
+    padding: 0 4px;
+    height: 50px;
+    margin-top: 2rem;
+
+}
+.social-media-section img:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(1.2);
 }
 .happy-mood{
     width: 200px;

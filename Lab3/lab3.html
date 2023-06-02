@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="lab3.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -13,7 +14,7 @@
   <body>
     <table>
       <tr>
-        <th>logo</th>
+        <th><img src="../images/lab3/logo.avif" height="70px" width="90px"></th>
         <th>Welcome Amrit</th>
         <th>
           <button>Logout</button>
@@ -32,19 +33,19 @@
         <td>Node.js</td>
         <td>9.99</td>
         <td>8</td>
-        <td><i class="fa-light fa-cart-shopping"></i></td>
+        <td><img src="../images/lab3/cart.jpeg" alt="cart" width="50px" height="50px" ></td>
       </tr>
       <tr>
         <td>React</td>
         <td>19.99</td>
         <td>5</td>
-        <td><i class="fa-light fa-cart-shopping fa-beat-fade"></i></td>
+        <td><img src="../images/lab3/cart.jpeg" alt="cart" width="50px" height="50px"></td>
       </tr>
       <tr>
         <td>Angular</td>
         <td>29.99</td>
         <td>5</td>
-        <td><i class="fa-light fa-cart-shopping fa-beat-fade"></i></td>
+        <td><img src="../images/lab3/cart.jpeg" alt="cart" width="50px" height="50px"></td>
       </tr>
     </table>
     <h3>Your Shopping Cart</h3>
@@ -59,26 +60,24 @@
         <td>Node.js</td>
         <td>9.99</td>
         <td>8</td>
-        <td>Image of cart</td>
+        <td>- <input type="number" aria-setsize="2"> +</td>
       </tr>
       <tr>
         <td>React</td>
         <td>19.99</td>
         <td>5</td>
-        <td>Image of cart</td>
+        <td>- <input type="number" aria-setsize="2"> +</td>
       </tr>
       <tr>
         <td>Angular</td>
         <td>29.99</td>
         <td>5</td>
-        <td>Image of cart</td>
+        <td>- <input type="number" aria-setsize="2"> +</td>
       </tr>
-      <tr>
-        <td><textarea>Total</textarea></td>
-      </tr>
-      <tr>
-        <td><button>Place Order</button></td>
+      <tr class="total">
+      <td colspan="4"><label>Total: </label><textarea></textarea></td>
       </tr>
     </table>
+    <button class="placeOrder"> Place Order </button>
   </body>
 </html>
