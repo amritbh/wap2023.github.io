@@ -27,8 +27,9 @@
     background-color: white;
 }
 .four{
-    background-color: cadetblue;
+    background-color:rgb(246, 238, 238);
     width: 626px;
+    text-align: center;
 }
 body{
     /* background-color: rgb(188, 125, 10); */
@@ -43,4 +44,11 @@ body{
 
 .header{
     display: flex;
+}
+h4{
+    text-decoration: underline;
+}
+.two > p{
+    text-decoration: underline;
+    
 }
