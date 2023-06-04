@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkShop Registration</title>
+    <link rel="stylesheet" href="./lab4.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="one">
+            <h3>WorkShop Registration</h3>
+            <label for="action">More Actions:</label>
+            <select id="action" name="action">
+                <option value="presentation"></option>
+                <option value="Documentation">Presentation</option>
+                <option value="Documentation">Documentation</option>
+            </select>
+        </div>
+         <div class="middleContainer">
+        <div class="two">
+            <p>Register Now While Seats are available</p>
+            <form action="/tacos">
+                <p>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" placeholder="First Name">
+                </p>
+                <P>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                </p>
+                <p>
+                    <label for="companyName"> Company/Institution </label>
+                    <input type="text" id="companyName">
+                </p>
+                <p>
+                    <label for="address"> Address: </label>
+                    <textarea id="address" name="address" rows="3" cols="25"></textarea>
+                    <!-- <input type="text"  id="address"> -->
+
+                </p>
+                <P>
+                    <label for="city">City: </label>
+                    <input type="text" name="City: " id="city" placeholder="City">
+                </p>
+                <p>
+                    <label for="state">State/Provience/Region</label>
+                    <select id="state" name="state">
+                        <option value="select">Select</option>
+                        <option value="TX">TX</option>
+                        <option value="NY">NY</option>
+                        <option value="Washington DC">DC</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="select">Select</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="PK">PK</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" placeholder="Email">
+                </p>
+                <p>
+                    <label for="phoneNumber">Phone Number: </label>
+                    <input type="text" id="phoneNumber" placeholder="Phone Number">
+                </p>
+        </div>
+        <div class="three">
+            <!-- right side of page -->
+            <p>
+            <h3 style="font-style: italic;">Lunch</h3>
+            <label for="mealPref">Meal Preferences</label>
+            <select id="mealPref" name="mealPref">
+                <option value="veg">Vegeterian</option>
+                <option value="non-veg">Non-Vegetarian</option>
+
+            </select>
+            </p>
+            <p>
+            <h3 style="font-style: italic;">Payment Details</h3>
+            <input type="checkbox" name="payment_mode" id="payment_mode">
+            <label for="payment_mode">Cash</label>
+            <input type="checkbox" name="payment_mode" id="payment_mode">
+            <label for="payment_mode">Cheque</label>
+            <input type="checkbox" name="payment_mode" id="payment_mode">
+            <label for="payment_mode">Demand Draft</label>
+
+
+            </p>
+            <P>
+                <label for="chequeNumber">DD / Cheque Number: </label>
+                <input type="text" name="chequeNumber" id="chequeNumber">
+            </p>
+            <P>
+                <label for="chequeNumber"> Drawn On (Bank Name): </label>
+                <input type="text" name="drawnOn" id="drawnOn">
+            </p>
+            <P>
+                <label for="chequeNumber"> Payable at </label>
+                <input type="text" name="payable" id="payable">
+            </p>
+        </div>
+    </div>
+
+        <!-- if you have a buttion inside of form elemetn the default behaviour is to submit the form -->
+        <!-- last part submit reset buttion -->
+        <div class="four">
+            <button>Submit</button>
+            <button>Reset</button>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>

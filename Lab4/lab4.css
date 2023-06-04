@@ -1,0 +1,46 @@
+.container{
+    padding: 10px;
+    
+    
+}
+.middleContainer{
+    display: flex;
+    gap: 30px;
+}
+.one{
+    background-color:lightblue;
+    display: flex;
+    gap: 20px;
+    width: 626px;
+        
+}
+.one > h3{
+    padding: 0;
+    margin: 0;
+}
+.two{
+    background-color: white;
+   
+    
+}
+.three{
+    background-color: white;
+}
+.four{
+    background-color: cadetblue;
+    width: 626px;
+}
+body{
+    /* background-color: rgb(188, 125, 10); */
+    /* color: aqua; */
+    margin-left: 50px;
+    margin-top: 20px;
+    border: 2px solid;
+    width: fit-content;
+    border-color: bisque;
+}
+
+
+.header{
+    display: flex;
+}
