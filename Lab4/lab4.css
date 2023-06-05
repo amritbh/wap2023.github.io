@@ -8,10 +8,10 @@
     gap: 30px;
 }
 .one{
-    background-color:lightblue;
+    background-color:mediumseagreen;
     display: flex;
     gap: 20px;
-    width: 626px;
+    width: 650px;
         
 }
 .one > h3{
@@ -41,7 +41,6 @@ body{
     border-color: bisque;
 }
 
-
 .header{
     display: flex;
 }
@@ -51,4 +50,14 @@ h4{
 .two > p{
     text-decoration: underline;
     
+}
+span{
+    color: red;
+}
+button{
+    background-color:mediumseagreen;
+    color: white;
+}
+.payment{
+    list-style-type: none;
 }

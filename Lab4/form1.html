@@ -13,9 +13,9 @@
     <div class="container">
         <div class="one">
             <h3>WorkShop Registration</h3>
-            <label for="action">More Actions:</label>
+            <!-- <label for="action">More Actions:</label> -->
             <select id="action" name="action">
-                <option value="presentation"></option>
+                <option value="More Actions">More Actions</option>
                 <option value="Documentation">Presentation</option>
                 <option value="Documentation">Documentation</option>
             </select>
@@ -25,19 +25,19 @@
             <p>Register Now While Seats are available</p>
             <form action="/tacos">
                 <p>
-                    <label for="firstName">First Name: </label>
+                    <label for="firstName">First Name <span>*</span> </label>
                     <input type="text" id="firstName" placeholder="First Name">
                 </p>
                 <P>
-                    <label for="lastName">Last Name: </label>
+                    <label for="lastName">Last Name <span>*</span> </label>
                     <input type="text" name="lastName" id="lastName" placeholder="Last Name">
                 </p>
                 <p>
-                    <label for="companyName"> Company/Institution </label>
+                    <label for="companyName"> Company/Institution<span>*</span> </label>
                     <input type="text" id="companyName">
                 </p>
                 <p>
-                    <label for="address"> Address: </label>
+                    <label for="address"> Address<span>*</span> </label>
                     <textarea id="address" name="address" rows="3" cols="25"></textarea>
                     <!-- <input type="text"  id="address"> -->
 
@@ -66,11 +66,11 @@
                     </select>
                 </p>
                 <p>
-                    <label for="email">Email: </label>
+                    <label for="email">Email<span>*</span></label>
                     <input type="text" id="email" placeholder="Email">
                 </p>
                 <p>
-                    <label for="phoneNumber">Phone Number: </label>
+                    <label for="phoneNumber">Phone Number<span>*</span></label>
                     <input type="text" id="phoneNumber" placeholder="Phone Number">
                 </p>
         </div>
@@ -87,12 +87,20 @@
             </p>
             <p>
             <h4 style="font-style: italic;">Payment Details</h4>
-            <input type="checkbox" name="payment_mode" id="payment_mode">
-            <label for="payment_mode">Cash</label>
-            <input type="checkbox" name="payment_mode" id="payment_mode">
-            <label for="payment_mode">Cheque</label>
-            <input type="checkbox" name="payment_mode" id="payment_mode">
-            <label for="payment_mode">Demand Draft</label>
+            <ul class="payment">
+                <Li>
+                <input type="checkbox" name="payment_mode" id="payment_mode">
+                <label for="payment_mode">Cash</label>
+                </Li>
+                <li>
+                <input type="checkbox" name="payment_mode" id="payment_mode">
+                <label for="payment_mode">Cheque</label>
+                </li>
+                <li>
+                <input type="checkbox" name="payment_mode" id="payment_mode">
+                <label for="payment_mode">Demand Draft</label>
+                </Li>
+            </ul>
 
 
             </p>
