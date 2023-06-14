@@ -12,12 +12,12 @@ function printNumbers (from, to){
 
     }, 1000);
 }
-// printing by passing numbers from 3 to 13
-printNumbers(5, 10); 
+// printing by passing numbers from 3 to 8
+printNumbers(3, 8); 
 // output 
+// 3
+// 4
 // 5
 // 6
 // 7
 // 8
-// 9
-// 10

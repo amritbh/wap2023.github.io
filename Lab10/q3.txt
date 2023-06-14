@@ -1,0 +1,11 @@
+Q3) Does Node.js has window object?
+No, Node.js does not have a `window` object. This object is a part of the Browser Object Model (BOM), 
+which is a set of objects that are available in web browsers. Node.js is a server-side JavaScript runtime
+environment that is based on the V8 JavaScript engine.
+It does not have a BOM because it doesn't run inside a browser. 
+
+However, Node.js has an object called `global`, which is similar to the `window` object in the browser. 
+While the `window` object provides access to web APIs like `document`, `location`, `XMLHttpRequest`, 
+etc., the `global` object provides access to Node.js global objects, including `process`, `console`, `module`,
+`require()`, etc.
+

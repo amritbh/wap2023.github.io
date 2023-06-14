@@ -1,0 +1,45 @@
+
+
+Q2) Explain the difference between process.nextTick and setImmediate?
+In JavaScript, both setImmediate and setTimeout are used to schedule code execution in an asynchronous manner. 
+However, there are scenarios where setImmediate may be preferred over setTimeout. Here are a few reasons:
+In general, `setImmediate()` is preferred over `setTimeout()` when the function being called does not require any 
+artificial time delay or period and instead depends upon a completion of the I/O event or task. 
+
+Let's consider a scenario where we are performing some asynchronous I/O operation and want to run some post-processing 
+function after it completes. In this case, if we use `setTimeout()` to delay the execution of the function until after
+ the I/O operation is completed, it may lead to undesirable results if the delay period is an arbitrary large value. 
+ However, if we use `setImmediate()`, the function will be deferred until just after the I/O operation, and this will 
+ lead to an efficient use of resources.
+
+Therefore, `setImmediate()` is recommended when we want to execute a function that depends upon some I/O operation 
+rather than a time interval, as it ensures that the function is run just after the completion of the I/O operation 
+in the event queue.
+
+Example:
+console.log("Start");
+
+setImmediate(function() {
+  console.log("Immediate callback executed");
+});
+
+setTimeout(function() {
+  console.log("Timeout callback executed");
+}, 0);
+
+console.log("End");
+
+
+//output 
+Start
+End
+Immediate callback executed
+Timeout callback executed
+
+As you can see, the setImmediate callback is executed before the setTimeout callback, 
+even though the delay in setTimeout is set to 0. This showcases the immediate execution behavior
+ of setImmediate and how it prioritizes running callbacks after the current event loop phase.
+
+
+
+
