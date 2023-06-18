@@ -1,0 +1,33 @@
+textarea {
+    border: 1px solid #000; /* Replace #000 with the desired dark color */
+}
+.text-center{
+    text-align: center;
+}
+body{
+    background-color: lightblue;
+}
+.nav-color{
+    background-color: white;
+}
+  /* Custom class for navbar */
+  .custom-navbar {
+    background-color: #ffffff; /* Update with desired background color */
+  }
+
+  /* Custom background for body */
+  body {
+    background-image: url('./images/background_image.jpeg'); /* Update with your desired background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+    .product-image {
+        max-width: 150px;
+        max-height: 150px;
+        object-fit: contain;
+    }
+    #login-error{
+        margin-left: 10px;
+        padding-left:10px;
+    }
