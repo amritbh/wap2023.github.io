@@ -1,0 +1,42 @@
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .carousel-slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-slide-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.carousel-button-prev {
+  left: 50px;
+}
+
+.carousel-button-next {
+  right: 50px;
+}
+body{
+    background-color: aliceblue;
+}

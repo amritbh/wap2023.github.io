@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bookstore</title>
+    <link rel="stylesheet" href="./carousel.css" />
+  </head>
+  <body>
+    <main>
+      <h1>My Bookstore</h1>
+
+      <form id="add-book-form">
+        <h2>Add a Book</h2>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required />
+
+        <label for="publishedDate">Published Date:</label>
+        <input type="text" id="publishedDate" name="publishedDate" required />
+
+        <label for="ISBN">ISBN:</label>
+        <input type="text" id="isbn" name="ISBN" required />
+
+        <button type="submit" id="subBtn1">Submit</button>
+        <button type="submit" id="subBtn2">Submit</button>
+      </form>
+
+      <ul id="book-list"></ul>
+    </main>
+
+    <script src="./main-old.js">
+      function eventHandler(){
+
+      }
+
+      // function eventHandler(){
+      //   console.log('btn1 clicked');
+      // }
+      // document.getElementById('subBtn1').onclick = eventHandler;//make sure to provide function reference not funciton call
+
+      document.getElementById('subBtn1').onclick = function(){ //in project use onclick
+        console.log('submitbtn1 clicked');
+      }
+      //note that when you use arrow funciton you gonna loose this keyword
+      //above and below both way works what's the difference them ? ans:
+      document.getElementById('subBtn2').addEventListener('click', function(){ //if you wannt to use this way see observer pattern
+        console.log('submitbtn2 clicked..');
+      });
+    </script>
+  </body>
+</html>
